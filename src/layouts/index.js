@@ -8,10 +8,10 @@ import './index.css'
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Gatsby Default Starter"
+      title="Devoxx recipes"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Sample Gatsby app for devoxx !!' },
+        { name: 'keywords', content: 'recipes, gatsbyjs' },
       ]}
     />
     <Header />

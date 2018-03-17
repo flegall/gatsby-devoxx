@@ -23,7 +23,7 @@ const Header = () => (
             textDecoration: 'none',
           }}
         >
-          Gatsby
+          Devoxx recipes !
         </Link>
       </h1>
     </div>

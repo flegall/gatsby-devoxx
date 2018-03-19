@@ -5,7 +5,7 @@ title: "Guacamole for all !"
 tags: ["guacamole", "avocado"]
 ---
 
-![Guacamole](guacamole.jpg)
+![Guacamole](/recipes/guacamole.jpg)
 
 # Ingredients
 

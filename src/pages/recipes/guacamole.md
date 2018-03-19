@@ -5,6 +5,8 @@ title: "Guacamole for all !"
 tags: ["guacamole", "avocado"]
 ---
 
+![Guacamole](guacamole.jpg)
+
 # Ingredients
 
 * 3 avocados - peeled, pitted, and mashed

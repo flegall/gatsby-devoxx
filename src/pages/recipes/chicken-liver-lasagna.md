@@ -5,6 +5,8 @@ title: "Chicken liver lasagna"
 tags: ["lasagna", "liver", "chicker"]
 ---
 
+![Lasagna](lasagna.jpg)
+
 # Ingredients
 
 * 100 ml extra virgin olive oil

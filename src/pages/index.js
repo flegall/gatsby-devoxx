@@ -1,14 +1,25 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const IndexPage = ({ data: { allMarkdownRemark: { edges } } }) => {
-  const posts = edges
-    .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
+const IndexPage = ({
+  data: { recipes: { edges: recipesEdges }, tags: { group: tagGroups } },
+}) => {
+  const recipes = recipesEdges
+    .filter(edge => !!edge.node.frontmatter.date) // You can filter your recipes based on some criteria
     .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
+
+  const tags = tagGroups.map(({ fieldValue, totalCount }) => (
+    <div>
+      {fieldValue}/{totalCount}
+    </div>
+  ))
   return (
     <div>
-      <h1>Choose your recipe</h1>
-      {posts}
+      <h2>Choose your recipe</h2>
+      {recipes}
+      <p />
+      <h2>Choose your tag</h2>
+      {tags}
     </div>
   )
 }
@@ -17,7 +28,9 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    recipes: allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
       edges {
         node {
           id
@@ -28,6 +41,13 @@ export const pageQuery = graphql`
             title
           }
         }
+      }
+    }
+
+    tags: allMarkdownRemark {
+      group(field: frontmatter___tags) {
+        fieldValue
+        totalCount
       }
     }
   }

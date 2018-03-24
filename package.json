@@ -4,10 +4,10 @@
   "version": "1.0.0",
   "author": "Florent Le Gall <florent.legall@gmail.com>",
   "dependencies": {
-    "gatsby": "1.9.240",
+    "gatsby": "1.9.241",
     "gatsby-link": "1.6.39",
     "gatsby-plugin-react-helmet": "2.0.8",
-    "gatsby-plugin-styled-components": "2.0.9",
+    "gatsby-plugin-styled-components": "2.0.10",
     "gatsby-source-filesystem": "1.5.27",
     "gatsby-transformer-remark": "1.7.37",
     "husky": "0.14.3",

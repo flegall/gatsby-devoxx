@@ -1,3 +1,5 @@
+/// @flow
+
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
@@ -27,8 +29,6 @@ const WhiteLink = styled(Link)`
 `
 const WhiteALink = WhiteLink.withComponent('a')
 
-const GitHubImage = styled.img``
-
 const Header = () => (
   <Background>
     <Container>
@@ -36,7 +36,7 @@ const Header = () => (
         <WhiteLink to="/">Devoxx recipes !</WhiteLink>
       </Title>
       <WhiteALink href="https://github.com/flegall/gatsby-devoxx">
-        <GitHubImage src={GitHubMarkSVG} />
+        <img src={GitHubMarkSVG} />
       </WhiteALink>
     </Container>
   </Background>

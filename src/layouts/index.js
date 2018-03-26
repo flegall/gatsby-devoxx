@@ -1,4 +1,6 @@
-import React from 'react'
+// @flow
+
+import * as React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
@@ -13,7 +15,10 @@ const Container = styled.div`
   padding-top: 0px;
 `
 
-const TemplateWrapper = ({ children }) => (
+type Props = {
+  children: () => React.Node[],
+}
+const TemplateWrapper = ({ children }: Props) => (
   <div>
     <Helmet
       title="Devoxx recipes"

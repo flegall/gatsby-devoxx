@@ -5,6 +5,14 @@
  */
 const path = require('path')
 
+exports.modifyBabelrc = ({ babelrc }) => {
+  return {
+    ...babelrc,
+    presets: [...babelrc.presets, 'flow'],
+    plugins: ['transform-decorators-legacy', ...babelrc.plugins],
+  }
+}
+
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators
 

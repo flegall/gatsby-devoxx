@@ -9,7 +9,7 @@
     "gatsby-plugin-react-helmet": "2.0.8",
     "gatsby-plugin-styled-components": "2.0.11",
     "gatsby-source-filesystem": "1.5.27",
-    "gatsby-transformer-remark": "1.7.38",
+    "gatsby-transformer-remark": "1.7.39",
     "mobx": "4.1.0",
     "mobx-react": "5.0.0",
     "react-helmet": "5.2.0",

@@ -12,18 +12,16 @@ type Props = {
 }
 const TagsPage = ({ data: { allMarkdownRemark: { group } } }: Props) => (
   <div>
-    <div>
-      <h1>Tags</h1>
-      <ul>
-        {group.map(tag => (
-          <li key={tag.fieldValue}>
-            <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-              {tag.fieldValue} ({tag.totalCount})
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <h1>Tags</h1>
+    <ul>
+      {group.map(tag => (
+        <li key={tag.fieldValue}>
+          <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+            {tag.fieldValue} ({tag.totalCount})
+          </Link>
+        </li>
+      ))}
+    </ul>
   </div>
 )
 

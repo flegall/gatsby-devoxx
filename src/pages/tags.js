@@ -1,10 +1,16 @@
 // @flow
 import kebabCase from 'lodash/kebabCase'
 import React from 'react'
-import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
-const TagsPage = ({ data: { allMarkdownRemark: { group } } }) => (
+type Props = {
+  data: {
+    allMarkdownRemark: {
+      group: Array<{ fieldValue: string, totalCount: string }>,
+    },
+  },
+}
+const TagsPage = ({ data: { allMarkdownRemark: { group } } }: Props) => (
   <div>
     <div>
       <h1>Tags</h1>
@@ -23,6 +29,7 @@ const TagsPage = ({ data: { allMarkdownRemark: { group } } }) => (
 
 export default TagsPage
 
+// $FlowIgnore
 export const pageQuery = graphql`
   query TagsQuery {
     allMarkdownRemark(limit: 2000) {

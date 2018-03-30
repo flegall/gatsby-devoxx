@@ -1,19 +1,6 @@
 // @flow
 import React from 'react'
 import Link from 'gatsby-link'
-import { action, observable } from 'mobx'
-import { observer } from 'mobx-react'
-
-var appState = observable({
-  timer: 0,
-})
-
-setInterval(
-  action(function tick() {
-    appState.timer += 1
-  }),
-  1000
-)
 
 type Props = {
   data: {
@@ -29,35 +16,22 @@ type Props = {
         },
       }[],
     },
-    tags: { group: { fieldValue: string, totalCount: number }[] },
   },
 }
-const IndexPage = observer((props: Props) => {
-  const {
-    data: { recipes: { edges: recipesEdges }, tags: { group: tagGroups } },
-  } = props
+const IndexPage = (props: Props) => {
+  const { data: { recipes: { edges: recipesEdges } } } = props
 
   const recipes = recipesEdges
     .filter(edge => !!edge.node.frontmatter.date) // You can filter your recipes based on some criteria
     .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
-
-  const tags = tagGroups.map(({ fieldValue, totalCount }) => (
-    <div key={fieldValue}>
-      {fieldValue}/{totalCount}
-    </div>
-  ))
-
   return (
     <div>
-      <h2>Choose your recipe</h2>
+      <h1>Your recipes</h1>
       {recipes}
       <p />
-      <h2>Choose your tag</h2>
-      {tags}
-      {appState.timer}
     </div>
   )
-})
+}
 
 export default IndexPage
 
@@ -77,13 +51,6 @@ export const pageQuery = graphql`
             title
           }
         }
-      }
-    }
-
-    tags: allMarkdownRemark {
-      group(field: frontmatter___tags) {
-        fieldValue
-        totalCount
       }
     }
   }

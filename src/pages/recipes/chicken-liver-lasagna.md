@@ -2,7 +2,7 @@
 path: "/recipes/chicker-liver-lasagna"
 date: "2018-03-18"
 title: "Chicken liver lasagna"
-tags: ["lasagna", "liver", "chicker"]
+tags: ["lasagna", "liver", "chicken"]
 ---
 
 ![Lasagna](./lasagna.jpg)

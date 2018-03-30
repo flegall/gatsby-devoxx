@@ -1,5 +1,7 @@
 // @flow
 import React from 'react'
+import Link from 'gatsby-link'
+import kebabCase from 'lodash/kebabCase'
 
 type Props = {
   data: {
@@ -8,6 +10,7 @@ type Props = {
         title: string,
         path: string,
         date: string,
+        tags: string[],
       },
       html: string,
     },
@@ -23,6 +26,15 @@ export default function Template({
       <div className="recipe">
         <h1>{frontmatter.title}</h1>
         {frontmatter.date}
+        <p />
+        <h2>Tags</h2>
+        <ul>
+          {frontmatter.tags.map(tag => (
+            <li key={tag}>
+              <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+            </li>
+          ))}
+        </ul>
         <p />
         <div
           className="recipe-content"
@@ -42,6 +54,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        tags
       }
     }
   }

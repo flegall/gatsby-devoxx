@@ -29,6 +29,7 @@ const IndexPage = (props: Props) => {
       <h1>Your recipes</h1>
       {recipes}
       <p />
+      <Link to="/tags">All tags</Link>
     </div>
   )
 }

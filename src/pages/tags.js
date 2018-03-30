@@ -1,3 +1,4 @@
+// @flow
 import kebabCase from 'lodash/kebabCase'
 import React from 'react'
 import PropTypes from 'prop-types'

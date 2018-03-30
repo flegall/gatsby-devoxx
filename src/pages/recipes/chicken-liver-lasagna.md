@@ -5,7 +5,7 @@ title: "Chicken liver lasagna"
 tags: ["lasagna", "liver", "chicker"]
 ---
 
-![Lasagna](/recipes/lasagna.jpg)
+![Lasagna](./lasagna.jpg)
 
 # Ingredients
 

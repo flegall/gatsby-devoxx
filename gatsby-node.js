@@ -17,7 +17,7 @@ exports.modifyBabelrc = ({ babelrc }) => {
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators
 
-  const blogPostTemplate = path.resolve(`src/templates/recipeTemplate.js`)
+  const recipeTemplate = path.resolve(`src/templates/recipeTemplate.js`)
   const tagTemplate = path.resolve(`src/templates/tagTemplate.js`)
 
   return graphql(`
@@ -44,7 +44,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       createPage({
         path: node.frontmatter.path,
-        component: blogPostTemplate,
+        component: recipeTemplate,
         context: {}, // additional data can be passed via context
       })
     })

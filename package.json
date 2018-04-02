@@ -4,9 +4,9 @@
   "version": "1.0.0",
   "author": "Florent Le Gall <florent.legall@gmail.com>",
   "dependencies": {
-    "gatsby": "1.9.243",
+    "gatsby": "1.9.244",
     "gatsby-link": "1.6.40",
-    "gatsby-plugin-react-helmet": "2.0.9",
+    "gatsby-plugin-react-helmet": "2.0.10",
     "gatsby-plugin-sharp": "1.6.41",
     "gatsby-plugin-styled-components": "2.0.11",
     "gatsby-remark-images": "1.5.60",

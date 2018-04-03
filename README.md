@@ -2,4 +2,4 @@
 
 Deployed on https://gatsby-devoxx.netlify.com/
 
-Notes available on https://github.com/flegall/gatsby-devoxx/GatsbyJS.pdf
+Notes available on https://github.com/flegall/gatsby-devoxx/blob/master/GatsbyJS.pdf

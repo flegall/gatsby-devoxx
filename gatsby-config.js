@@ -38,5 +38,6 @@ module.exports = {
         showSpinner: false,
       },
     },
+    `gatsby-plugin-netlify`,
   ],
 }

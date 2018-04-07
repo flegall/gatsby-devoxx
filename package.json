@@ -12,7 +12,7 @@
     "gatsby-plugin-sharp": "1.6.41",
     "gatsby-plugin-styled-components": "2.0.11",
     "gatsby-remark-images": "1.5.60",
-    "gatsby-source-filesystem": "1.5.28",
+    "gatsby-source-filesystem": "1.5.29",
     "gatsby-transformer-remark": "1.7.39",
     "lodash": "4.17.5",
     "react": "16.3.1",

@@ -15,8 +15,8 @@
     "gatsby-source-filesystem": "1.5.32",
     "gatsby-transformer-remark": "1.7.40",
     "lodash": "4.17.5",
-    "react": "16.3.1",
-    "react-dom": "16.3.1",
+    "react": "16.3.2",
+    "react-dom": "16.3.2",
     "react-helmet": "5.2.0",
     "styled-components": "3.2.5"
   },

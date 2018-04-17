@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Florent Le Gall <florent.legall@gmail.com>",
   "dependencies": {
-    "gatsby": "1.9.251",
+    "gatsby": "1.9.252",
     "gatsby-link": "1.6.40",
     "gatsby-plugin-netlify": "1.0.19",
     "gatsby-plugin-nprogress": "1.0.14",
@@ -12,7 +12,7 @@
     "gatsby-plugin-sharp": "1.6.42",
     "gatsby-plugin-styled-components": "2.0.11",
     "gatsby-remark-images": "1.5.61",
-    "gatsby-source-filesystem": "1.5.32",
+    "gatsby-source-filesystem": "1.5.33",
     "gatsby-transformer-remark": "1.7.40",
     "lodash": "4.17.5",
     "react": "16.3.2",

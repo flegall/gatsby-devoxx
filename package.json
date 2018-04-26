@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Florent Le Gall <florent.legall@gmail.com>",
   "dependencies": {
-    "gatsby": "1.9.254",
+    "gatsby": "1.9.255",
     "gatsby-link": "1.6.41",
     "gatsby-plugin-netlify": "1.0.19",
     "gatsby-plugin-nprogress": "1.0.14",

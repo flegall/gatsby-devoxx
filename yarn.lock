@@ -1758,9 +1758,9 @@ caniuse-api@^1.5.2, caniuse-api@^1.5.3:
     lodash.memoize "^4.1.2"
     lodash.uniq "^4.5.0"
 
-caniuse-db@1.0.30000882:
-  version "1.0.30000882"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000882.tgz#d9d50e5189be253ffb31d347cd7f3c615b602f7f"
+caniuse-db@1.0.30000883:
+  version "1.0.30000883"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000883.tgz#976f22d6a9be119b342d5ce6c7ee98fc6e0bc94a"
 
 caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
   version "1.0.30000815"

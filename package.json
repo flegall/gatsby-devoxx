@@ -40,7 +40,7 @@
     "concurrent": false
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "1.6.3",
+    "babel-plugin-styled-components": "1.6.4",
     "babel-plugin-transform-decorators-legacy": "1.3.5",
     "babel-preset-flow": "6.23.0",
     "caniuse-db": "1.0.30000885",

@@ -14,7 +14,7 @@
     "gatsby-remark-images": "1.5.67",
     "gatsby-source-filesystem": "1.5.39",
     "gatsby-transformer-remark": "1.7.44",
-    "lodash": "4.17.10",
+    "lodash": "4.17.11",
     "react": "16.5.0",
     "react-dom": "16.5.0",
     "react-helmet": "5.2.0",

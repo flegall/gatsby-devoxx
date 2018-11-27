@@ -8,16 +8,6 @@
   dependencies:
     "@babel/types" "^7.0.0"
 
-"@babel/helper-plugin-utils@^7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@babel/helper-plugin-utils/-/helper-plugin-utils-7.0.0.tgz#bbb3fbee98661c569034237cc03967ba99b4f250"
-
-"@babel/plugin-syntax-jsx@^7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-jsx/-/plugin-syntax-jsx-7.0.0.tgz#034d5e2b4e14ccaea2e4c137af7e4afb39375ffd"
-  dependencies:
-    "@babel/helper-plugin-utils" "^7.0.0"
-
 "@babel/types@^7.0.0":
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.0.0.tgz#6e191793d3c854d19c6749989e3bc55f0e962118"
@@ -655,12 +645,12 @@ babel-plugin-check-es2015-constants@^6.22.0, babel-plugin-check-es2015-constants
   dependencies:
     babel-runtime "^6.22.0"
 
-babel-plugin-styled-components@1.9.0:
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-styled-components/-/babel-plugin-styled-components-1.9.0.tgz#7b814bbe55900d9e0f6ec2c66741a1992c1c4a3d"
+babel-plugin-styled-components@1.9.1:
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/babel-plugin-styled-components/-/babel-plugin-styled-components-1.9.1.tgz#53dde7a9cdff22a16db197129b1e68160c926e8b"
   dependencies:
     "@babel/helper-annotate-as-pure" "^7.0.0"
-    "@babel/plugin-syntax-jsx" "^7.0.0"
+    babel-plugin-syntax-jsx "^6.18.0"
     lodash "^4.17.10"
 
 babel-plugin-syntax-async-functions@^6.8.0:
@@ -707,7 +697,7 @@ babel-plugin-syntax-function-bind@^6.8.0:
   version "6.13.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-function-bind/-/babel-plugin-syntax-function-bind-6.13.0.tgz#48c495f177bdf31a981e732f55adc0bdd2601f46"
 
-babel-plugin-syntax-jsx@^6.3.13, babel-plugin-syntax-jsx@^6.8.0:
+babel-plugin-syntax-jsx@^6.18.0, babel-plugin-syntax-jsx@^6.3.13, babel-plugin-syntax-jsx@^6.8.0:
   version "6.18.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-jsx/-/babel-plugin-syntax-jsx-6.18.0.tgz#0af32a9a6e13ca7a3fd5069e62d7b0f58d0d8946"
 

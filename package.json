@@ -43,7 +43,7 @@
     "babel-plugin-styled-components": "1.10.7",
     "babel-plugin-transform-decorators-legacy": "1.3.5",
     "babel-preset-flow": "6.23.0",
-    "caniuse-db": "1.0.30001025",
+    "caniuse-db": "1.0.30001027",
     "flow-bin": "0.118.0",
     "gatsby-plugin-react-next": "1.0.11",
     "husky": "0.14.3",
